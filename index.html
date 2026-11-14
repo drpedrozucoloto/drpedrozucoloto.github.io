@@ -1,0 +1,256 @@
+<!doctype html>
+<!-- Site do Dr. Pedro Zucoloto (Sistema IB, v2 de 14/11/2026: identidade do kit de marca). Sem fotos por enquanto:
+     quando chegarem, a foto entra no lugar do logo vertical do topo (.hero-logo) e na seção Sobre. -->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>Dentista em Vitória e Vila Velha | Dr. Pedro Zucoloto</title>
+<meta name="description" content="Dr. Pedro Zucoloto, cirurgião-dentista em Vitória e Vila Velha (ES). Restauração em resina com isolamento absoluto, troca de restauração antiga e tratamento para evitar extração. CRO-ES 12314.">
+<meta property="og:title" content="Dr. Pedro Zucoloto · Dentista em Vitória e Vila Velha">
+<meta property="og:description" content="Restauração feita com calma, etapa por etapa, e explicada para você.">
+<meta property="og:image" content="https://drpedrozucoloto.github.io/og.jpg">
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "Dr. Pedro Zucoloto",
+  "description": "Restauração em resina com isolamento absoluto, troca de restauração antiga, tratamento para evitar extração e avaliação de rotina.",
+  "url": "https://drpedrozucoloto.github.io/",
+  "image": "https://drpedrozucoloto.github.io/og.jpg",
+  "sameAs": ["https://www.instagram.com/dr.pedro.zucoloto", "https://share.google/4dwBmRccJ7YcvzfH7"],
+  "location": [
+    {"@type": "Dentist", "name": "Dr. Pedro Zucoloto · Zucoloto Odontologia", "telephone": "+55-27-98834-8448",
+     "address": {"@type": "PostalAddress", "streetAddress": "R. das Palmeiras, 685, 15º andar, sala 1511, Santa Lúcia", "addressLocality": "Vitória", "addressRegion": "ES", "postalCode": "29056-210", "addressCountry": "BR"},
+     "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "09:00", "closes": "18:00"}]},
+    {"@type": "Dentist", "name": "Dr. Pedro Zucoloto · Odontocenter Itaparica", "telephone": "+55-27-99516-8307",
+     "address": {"@type": "PostalAddress", "streetAddress": "Av. Santa Leopoldina, 1375, Praia de Itaparica", "addressLocality": "Vila Velha", "addressRegion": "ES", "postalCode": "29102-040", "addressCountry": "BR"},
+     "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "08:30", "closes": "18:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "08:30", "closes": "17:00"}]}
+  ]
+}
+</script>
+<style>
+:root{
+  --azul:#142B49; --noite:#0B1A2E; --sulco:#4A6385; --nevoa:#D6DEE8; --esmalte:#F4F5F2; --laranja:#E8743F;
+  --display:"Cormorant Garamond", Georgia, serif; --body:"Jost", "Helvetica Neue", Arial, sans-serif;
+  --s-1:clamp(.78rem,.75rem + .15vw,.85rem); --s0:clamp(1rem,.96rem + .2vw,1.08rem);
+  --s1:clamp(1.3rem,1.15rem + .6vw,1.6rem); --s2:clamp(2rem,1.5rem + 1.8vw,2.9rem);
+  --s3:clamp(2.6rem,1.9rem + 3.4vw,4.8rem); --gutter:clamp(16px,5vw,64px);
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--esmalte);color:var(--azul);font:400 var(--s0)/1.65 var(--body);-webkit-font-smoothing:antialiased;overflow-x:clip}
+img{max-width:100%;display:block;height:auto}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.08;margin:0;font-variant-numeric:lining-nums}
+h1 em,h2 em{font-style:italic;font-weight:500}
+h1{font-size:var(--s3)} h2{font-size:var(--s2)} h3{font-size:var(--s1)}
+a{color:inherit}
+.wrap{max-width:1180px;margin-inline:auto;padding-inline:var(--gutter);position:relative;z-index:2}
+.ey{font-size:var(--s-1);letter-spacing:.24em;text-transform:uppercase;color:var(--sulco);font-weight:500;margin:0 0 16px}
+.ey::before{content:"";display:block;width:56px;height:3px;background:var(--laranja);margin-bottom:16px}
+.escuro .ey{color:var(--nevoa)}
+section{padding-block:clamp(72px,10vw,128px);position:relative;overflow:hidden}
+.escuro{background:var(--azul);color:var(--esmalte)} .escuro h1,.escuro h2,.escuro h3{color:var(--esmalte)}
+.noite{background:var(--noite)}
+
+header.top{position:sticky;top:0;z-index:10;background:rgba(244,245,242,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--nevoa)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.marca img{height:46px;width:auto}
+nav a{margin-left:24px;text-decoration:none;font-size:.9rem;letter-spacing:.06em;color:var(--sulco)}
+nav a.cta{color:var(--azul);font-weight:500;border-bottom:2px solid var(--laranja);padding-bottom:2px}
+@media (max-width:760px){nav{display:none}.marca img{height:38px}}
+
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:999px;text-decoration:none;font-weight:500;letter-spacing:.02em;border:1px solid currentColor}
+.btn.cheio{background:var(--esmalte);color:var(--azul);border-color:var(--esmalte)}
+.btn.azul{background:var(--azul);color:var(--esmalte);border-color:var(--azul)}
+
+.hero{background:var(--azul) url(fundo-azul.png) right -120px bottom -60px/auto 135% no-repeat;color:var(--esmalte);padding-block:clamp(72px,9vw,120px)}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(32px,6vw,88px);align-items:center}
+.hero h1{color:var(--esmalte)}
+.hero p.lede{color:rgba(244,245,242,.82);font-size:var(--s1);max-width:36ch;margin:24px 0 32px;line-height:1.5}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.hero .btn:not(.cheio){color:var(--esmalte)}
+.creds{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:32px;font-size:.88rem;letter-spacing:.08em;text-transform:uppercase;color:var(--nevoa)}
+.creds b{color:var(--esmalte);font-weight:500}
+.hero-logo{padding:clamp(8px,2vw,24px) 0} /* sem moldura nem arco (pedido do Pedro, 14/11/2026): o logo solto sobre o azul */
+.hero-logo img{width:100%;max-width:400px;margin-inline:auto}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr}.hero-logo{order:-1;max-width:300px;width:78%;margin-inline:auto}.hero{background-size:auto 70%;background-position:right -160px bottom -40px}}
+
+.sobre .simbolo-fundo{position:absolute;right:-140px;top:50%;transform:translateY(-50%);width:620px;opacity:.07;z-index:1;pointer-events:none}
+.sobre .wrap{max-width:900px}
+.sobre p:not(.ey){font-size:var(--s1);line-height:1.55;color:var(--sulco);margin:24px 0 0;max-width:46ch}
+.sobre p b{color:var(--azul);font-weight:500}
+.assina{margin-top:34px;display:flex;align-items:center;gap:16px;font-size:.85rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sulco)}
+.assina img{width:54px}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:44px}
+.card{background:#fff;border:1px solid var(--nevoa);border-radius:22px;padding:28px 26px;position:relative;overflow:hidden}
+.card::after{content:"";position:absolute;right:-40px;bottom:-40px;width:150px;height:140px;background:url(simbolo-azul.svg) center/contain no-repeat;opacity:.06}
+.card .ic{width:40px;margin-bottom:18px}
+.card p{color:var(--sulco);margin:10px 0 0;font-size:.98rem}
+
+.etapas{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin-top:44px;counter-reset:e}
+.etapas div{border:1px solid rgba(214,222,232,.22);border-radius:20px;padding:24px;background:rgba(20,43,73,.6)}
+.etapas div::before{counter-increment:e;content:"0" counter(e);font-family:var(--display);font-weight:600;font-size:2.8rem;color:var(--laranja);display:block;line-height:1;margin-bottom:12px;font-variant-numeric:lining-nums}
+.etapas b{font-family:var(--display);font-size:1.45rem;font-weight:600;color:var(--esmalte)}
+.etapas p{margin:6px 0 0;color:rgba(244,245,242,.75);font-size:.95rem}
+.barra{display:flex;gap:10px;margin-top:40px}.barra i{flex:1;height:6px;border-radius:3px;background:var(--laranja)}
+.etapas-fundo{position:absolute;left:-180px;bottom:-200px;width:560px;opacity:.06;z-index:1;pointer-events:none}
+
+.faixa{text-align:center;padding-block:clamp(64px,8vw,104px)}
+.faixa img{width:72px;margin:0 auto 22px;opacity:.9}
+.faixa h2 em{color:var(--laranja)}
+
+.faq{max-width:840px;margin-top:40px;border-top:1px solid var(--nevoa)}
+.faq details{border-bottom:1px solid var(--nevoa);padding-block:22px}
+.faq summary{cursor:pointer;list-style:none;font-family:var(--display);font-weight:600;font-size:var(--s1);display:flex;justify-content:space-between;gap:20px;font-variant-numeric:lining-nums}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--laranja);font-family:var(--body);font-weight:400;font-size:1.5em;line-height:1}
+.faq details[open] summary::after{content:"\2212"}
+.faq p{margin:12px 0 0;color:var(--sulco);max-width:68ch}
+
+.unidades{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px;margin-top:40px}
+.unidade{background:#fff;border:1px solid var(--nevoa);border-radius:26px;padding:30px;border-top:5px solid var(--azul)}
+.unidade .cid{font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;color:var(--sulco);margin:0 0 6px}
+.unidade address{font-style:normal;color:var(--sulco);margin:12px 0 6px;line-height:1.6}
+.horarios{list-style:none;padding:0;margin:14px 0 18px;border-top:1px solid var(--nevoa)}
+.horarios li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--nevoa);font-size:.98rem}
+.horarios li b{font-weight:500}
+.unidade .links{display:flex;flex-wrap:wrap;gap:10px 18px;margin:0 0 20px;font-size:.92rem;color:var(--sulco)}
+.google{margin-top:36px;display:flex;flex-wrap:wrap;gap:12px 28px;color:var(--sulco)}
+
+footer{background:var(--azul);color:var(--nevoa);padding-block:48px 40px}
+footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px}
+footer img{height:64px;width:auto}
+footer p{margin:0;font-size:.88rem;letter-spacing:.06em;line-height:1.8}
+.agendar-fixo{display:none}
+@media (max-width:760px){
+  .agendar-fixo{display:flex;position:fixed;left:16px;right:16px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:20;justify-content:center;padding:15px 20px;border-radius:999px;background:var(--laranja);color:var(--noite);font-weight:500;text-decoration:none;box-shadow:0 10px 30px rgba(11,26,46,.3);transition:opacity .25s}
+  .agendar-fixo.some{opacity:0;pointer-events:none} footer{padding-bottom:110px}
+}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="marca" href="#inicio" aria-label="Dr. Pedro Zucoloto, início"><img src="logo-horizontal-azul.svg" alt="Dr. Pedro Zucoloto, cirurgião-dentista, CRO-ES 12314"></a>
+  <nav><a href="#sobre">Sobre</a><a href="#tratamentos">Tratamentos</a><a href="#duvidas">Dúvidas</a><a class="cta" href="#agendar">Agendar</a></nav>
+</div></header>
+
+<main id="inicio">
+  <section class="hero escuro"><div class="wrap">
+    <div>
+      <p class="ey">Dentista em Vitória e Vila Velha</p>
+      <h1>Restauração feita com calma, <em>etapa por etapa.</em></h1>
+      <p class="lede">Resina com isolamento absoluto, explicada para você antes, durante e depois. Senta aí que eu te explico.</p>
+      <div class="ctas"><a class="btn cheio" href="#agendar">Agendar avaliação</a><a class="btn" href="#tratamentos">Tratamentos</a></div>
+      <div class="creds"><span><b>CRO-ES 12314</b></span><span>Dentística restauradora</span><span>Isolamento absoluto</span></div>
+    </div>
+    <div class="hero-logo"><img src="logo-vertical-branca.svg" alt="Logo Dr. Pedro Zucoloto, cirurgião-dentista"></div>
+  </div></section>
+
+  <section class="sobre" id="sobre">
+    <img class="simbolo-fundo" src="simbolo-azul.svg" alt="">
+    <div class="wrap">
+      <p class="ey">Sobre</p>
+      <h2>Você vai saber o que foi feito <em>na sua boca.</em></h2>
+      <p>Sou o <b>Dr. Pedro Zucoloto</b>, cirurgião-dentista, e o meu foco é a dentística restauradora. Em toda restauração eu uso o <b>isolamento absoluto</b>: um lençol de borracha em volta do dente, que mantém a saliva longe e deixa a sua boca livre de algodão e sugador.</p>
+      <p>Depois do tratamento, eu sento com você e mostro fotos e vídeos do antes, do durante e do depois. Sem pressa e sem termo difícil.</p>
+      <div class="assina"><img src="simbolo-reforcado-azul.svg" alt="">Dr. Pedro Zucoloto · CRO-ES 12314</div>
+    </div>
+  </section>
+
+  <section id="tratamentos" style="padding-top:0"><div class="wrap">
+    <p class="ey">Tratamentos</p><h2>O que eu faço <em>no dia a dia.</em></h2>
+    <div class="cards">
+      <div class="card"><img class="ic" src="simbolo-reforcado-azul.svg" alt=""><h3>Restauração em resina</h3><p>Para cárie ou dente quebrado, feita em camadas e com isolamento absoluto, para a resina aderir de verdade ao dente.</p></div>
+      <div class="card"><img class="ic" src="simbolo-reforcado-azul.svg" alt=""><h3>Troca de restauração antiga</h3><p>Restauração escurecida, com fresta ou com cárie por baixo é avaliada e, quando precisa, trocada por uma nova.</p></div>
+      <div class="card"><img class="ic" src="simbolo-reforcado-azul.svg" alt=""><h3>Tratamento para evitar extração</h3><p>Nem sempre extrair é o único caminho. Uma segunda avaliação mostra se dá para manter o dente, por exemplo com elevação de margem.</p></div>
+      <div class="card"><img class="ic" src="simbolo-reforcado-azul.svg" alt=""><h3>Avaliação de rotina</h3><p>Consulta para olhar tudo com calma, achar o problema cedo e cuidar antes que ele cresça.</p></div>
+    </div>
+  </div></section>
+
+  <section class="escuro noite" id="etapas">
+    <img class="etapas-fundo" src="simbolo-branco.svg" alt="">
+    <div class="wrap">
+      <p class="ey">Por que demora 1 hora</p><h2>Cada minuto tem <em>um motivo.</em></h2>
+      <div class="etapas">
+        <div><b>Limpar tudo</b><p>A cárie e a restauração antiga saem por completo.</p></div>
+        <div><b>Isolar o dente</b><p>O lençol de borracha mantém a saliva longe e nada cai na sua garganta.</p></div>
+        <div><b>Condicionamento</b><p>Condicionamento seletivo e sistema adesivo, cada um no seu tempo.</p></div>
+        <div><b>Construir em camadas</b><p>Sistema de matrizes com anel interproximal e resina camada por camada.</p></div>
+        <div><b>Ajustar e polir</b><p>Mordida conferida e brilho final: menos placa e menos chance de fraturar.</p></div>
+      </div>
+      <div class="barra"><i></i><i></i><i></i><i></i><i></i></div>
+    </div>
+  </section>
+
+  <section class="faixa escuro"><div class="wrap">
+    <img src="simbolo-reforcado-branco.svg" alt="">
+    <h2>Restauração rápida nem sempre é <em>boa notícia.</em></h2>
+  </div></section>
+
+  <section id="duvidas"><div class="wrap">
+    <p class="ey">Dúvidas frequentes</p><h2>O que mais <em>me perguntam.</em></h2>
+    <div class="faq">
+      <details><summary>Por que a minha restauração demora 1 hora?</summary><p>Porque uma restauração bem feita tem etapas: limpar, isolar o dente, fazer o condicionamento, construir a resina em camadas e polir. Cada uma tem um motivo, e pular qualquer uma encurta a vida da restauração.</p></details>
+      <details><summary>Outro dentista disse que precisa extrair. Vale uma segunda avaliação?</summary><p>Vale. Nem sempre a extração é a única alternativa. Em alguns casos, dá para manter o dente com um tratamento mais conservador. Só a avaliação mostra o que é possível no seu caso.</p></details>
+      <details><summary>A minha restauração antiga precisa ser trocada?</summary><p>Depende. Se ela está escurecida, com fresta na borda ou com cárie por baixo, a troca evita que o problema cresça. Se está boa, ela fica. Na avaliação eu te mostro e explico.</p></details>
+      <details><summary>Tenho medo de dentista. Como funciona a consulta?</summary><p>Antes de começar, eu explico cada etapa e você pode perguntar o que quiser. Se preferir, mande as suas dúvidas pelo WhatsApp antes da consulta.</p></details>
+      <details><summary>Onde e quando você atende?</summary><p>Em Vitória, na Zucoloto Odontologia: terça-feira, das 9h às 18h. Em Vila Velha, na Odontocenter Itaparica: quinta-feira, das 8h30 às 18h, e sexta-feira, das 8h30 às 17h.</p></details>
+    </div>
+  </div></section>
+
+  <section id="agendar" style="padding-top:0"><div class="wrap">
+    <p class="ey">Agendar</p><h2>Agende pelo WhatsApp. <em>Respondo as dúvidas antes da consulta.</em></h2>
+    <div class="unidades">
+      <div class="unidade"><p class="cid">Vitória · Santa Lúcia</p><h3>Zucoloto Odontologia</h3>
+        <address>R. das Palmeiras, 685, 15º andar, sala 1511<br>Santa Lúcia, Vitória, ES · <span style="white-space:nowrap">29056-210</span></address>
+        <ul class="horarios"><li><b>Terça-feira</b><span>9h às 18h</span></li></ul>
+        <div class="links"><a href="https://www.google.com/maps/search/?api=1&query=R.%20das%20Palmeiras%2C%20685%2C%20Santa%20L%C3%BAcia%2C%20Vit%C3%B3ria%20-%20ES%2C%2029056-210" target="_blank" rel="noopener">Ver no mapa</a></div>
+        <a class="btn azul" href="https://wa.me/5527988348448?text=Ol%C3%A1%2C%20Dr.%20Pedro!%20Quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20em%20Vit%C3%B3ria." target="_blank" rel="noopener">Agendar em Vitória</a></div>
+      <div class="unidade"><p class="cid">Vila Velha · Praia de Itaparica</p><h3>Odontocenter Itaparica</h3>
+        <address>Av. Santa Leopoldina, 1375<br>Praia de Itaparica, Vila Velha, ES · <span style="white-space:nowrap">29102-040</span></address>
+        <ul class="horarios"><li><b>Quinta-feira</b><span>8h30 às 18h</span></li><li><b>Sexta-feira</b><span>8h30 às 17h</span></li></ul>
+        <div class="links"><a href="https://share.google/HV1lLSOmQnpuJFmd3" target="_blank" rel="noopener">Ver no mapa e avaliações</a></div>
+        <a class="btn azul" href="https://wa.me/5527995168307?text=Ol%C3%A1%2C%20Dr.%20Pedro!%20Quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20em%20Vila%20Velha." target="_blank" rel="noopener">Agendar em Vila Velha</a></div>
+    </div>
+    <div class="google"><a href="https://share.google/4dwBmRccJ7YcvzfH7" target="_blank" rel="noopener">Já foi atendido? Deixe sua avaliação na minha página do Google</a><a href="https://www.instagram.com/dr.pedro.zucoloto" target="_blank" rel="noopener">@dr.pedro.zucoloto</a></div>
+  </div></section>
+</main>
+
+<footer><div class="wrap">
+  <img src="logo-horizontal-branca.svg" alt="Dr. Pedro Zucoloto, cirurgião-dentista, CRO-ES 12314">
+  <p>Vitória: terça-feira, 9h às 18h<br>Vila Velha: quinta-feira, 8h30 às 18h · sexta-feira, 8h30 às 17h</p>
+</div></footer>
+<a class="agendar-fixo" href="#agendar">Agendar avaliação</a>
+<script>
+/* Origem do contato: quem chega do Instagram (?origem=instagram, ?origem=guia ou vindo de instagram.com)
+   manda no WhatsApp uma mensagem que já diz de onde veio. */
+(function(){
+  var q = new URLSearchParams(location.search);
+  var origem = (q.get("origem") || q.get("utm_source") || "").toLowerCase();
+  if(!origem && /instagram\.com/i.test(document.referrer || "")) origem = "instagram";
+  var textos = {
+    instagram: "Olá, Dr. Pedro! Vi seu Instagram e quero agendar uma avaliação em ",
+    guia: "Olá, Dr. Pedro! Recebi o material pelo Instagram e quero agendar uma avaliação em "
+  };
+  if(!textos[origem]) return;
+  document.querySelectorAll('a[href*="wa.me/"]').forEach(function(a){
+    try {
+      var u = new URL(a.href);
+      var cidade = /99516/.test(u.pathname) ? "Vila Velha." : "Vitória.";
+      u.searchParams.set("text", textos[origem] + cidade); a.href = u.toString();
+    } catch(e){}
+  });
+})();
+(function(){
+  var b = document.querySelector('.agendar-fixo'), alvo = document.getElementById('agendar');
+  if(!b || !alvo || !('IntersectionObserver' in window)) return;
+  new IntersectionObserver(function(e){ b.classList.toggle('some', e[0].isIntersecting); }, {threshold:.15}).observe(alvo);
+})();
+</script>
+</body>
+</html>
