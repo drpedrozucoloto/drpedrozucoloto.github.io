@@ -242,7 +242,7 @@ footer p{margin:0;font-size:.88rem;letter-spacing:.06em;line-height:1.8}
     try {
       var u = new URL(a.href);
       var cidade = /99516/.test(u.pathname) ? "Vila Velha." : "Vitória.";
-      u.searchParams.set("text", textos[origem] + cidade); a.href = u.toString();
+      a.href = u.origin + u.pathname + "?text=" + encodeURIComponent(textos[origem] + cidade);
     } catch(e){}
   });
 })();
