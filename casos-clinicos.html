@@ -1,0 +1,199 @@
+<!doctype html>
+<!-- Aba "Casos clínicos" (2026-11-15). Cada caso é um <article class="caso">; o mais novo fica em cima.
+     Só casos com autorização escrita do paciente; nunca o nome do paciente no site. -->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>Casos clínicos | Dr. Pedro Zucoloto, dentista em Vitória e Vila Velha</title>
+<meta name="description" content="Casos clínicos do Dr. Pedro Zucoloto: restaurações em resina com isolamento absoluto e dentes mantidos depois de uma segunda avaliação. CRO-ES 12314.">
+<meta property="og:title" content="Casos clínicos · Dr. Pedro Zucoloto">
+<meta property="og:description" content="Do primeiro olhar ao resultado, etapa por etapa.">
+<meta property="og:image" content="https://drpedrozucoloto.github.io/casos/premolar-extracao/poster.jpg">
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --azul:#142B49; --noite:#0B1A2E; --sulco:#4A6385; --nevoa:#D6DEE8; --esmalte:#F4F5F2; --laranja:#E8743F;
+  --display:"Cormorant Garamond", Georgia, serif; --body:"Jost", "Helvetica Neue", Arial, sans-serif;
+  --s-1:clamp(.78rem,.75rem + .15vw,.85rem); --s0:clamp(1rem,.96rem + .2vw,1.08rem);
+  --s1:clamp(1.3rem,1.15rem + .6vw,1.6rem); --s2:clamp(2rem,1.5rem + 1.8vw,2.9rem);
+  --s3:clamp(2.6rem,1.9rem + 3.4vw,4.8rem); --gutter:clamp(16px,5vw,64px);
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--esmalte);color:var(--azul);font:400 var(--s0)/1.65 var(--body);-webkit-font-smoothing:antialiased;overflow-x:clip}
+img{max-width:100%;display:block;height:auto}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.08;margin:0;font-variant-numeric:lining-nums}
+h1 em,h2 em{font-style:italic;font-weight:500}
+h1{font-size:var(--s3)} h2{font-size:var(--s2)} h3{font-size:var(--s1)}
+a{color:inherit}
+.wrap{max-width:1180px;margin-inline:auto;padding-inline:var(--gutter);position:relative;z-index:2}
+.ey{font-size:var(--s-1);letter-spacing:.24em;text-transform:uppercase;color:var(--sulco);font-weight:500;margin:0 0 16px}
+.ey::before{content:"";display:block;width:56px;height:3px;background:var(--laranja);margin-bottom:16px}
+.escuro .ey{color:var(--nevoa)}
+section{padding-block:clamp(72px,10vw,128px);position:relative;overflow:hidden}
+.escuro{background:var(--azul);color:var(--esmalte)} .escuro h1,.escuro h2,.escuro h3{color:var(--esmalte)}
+.noite{background:var(--noite)}
+
+header.top{position:sticky;top:0;z-index:10;background:rgba(244,245,242,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--nevoa)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.marca img{height:46px;width:auto}
+nav a{margin-left:24px;text-decoration:none;font-size:.9rem;letter-spacing:.06em;color:var(--sulco)}
+nav a.cta{color:var(--azul);font-weight:500;border-bottom:2px solid var(--laranja);padding-bottom:2px}
+@media (max-width:760px){nav{display:none}.marca img{height:38px}}
+
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:999px;text-decoration:none;font-weight:500;letter-spacing:.02em;border:1px solid currentColor}
+.btn.cheio{background:var(--esmalte);color:var(--azul);border-color:var(--esmalte)}
+.btn.azul{background:var(--azul);color:var(--esmalte);border-color:var(--azul)}
+
+.hero{background:var(--azul) url(fundo-azul.png) right -120px bottom -60px/auto 135% no-repeat;color:var(--esmalte);padding-block:clamp(72px,9vw,120px)}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(32px,6vw,88px);align-items:center}
+.hero h1{color:var(--esmalte)}
+.hero p.lede{color:rgba(244,245,242,.82);font-size:var(--s1);max-width:36ch;margin:24px 0 32px;line-height:1.5}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.hero .btn:not(.cheio){color:var(--esmalte)}
+.creds{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:32px;font-size:.88rem;letter-spacing:.08em;text-transform:uppercase;color:var(--nevoa)}
+.creds b{color:var(--esmalte);font-weight:500}
+.hero-logo{padding:clamp(8px,2vw,24px) 0} /* sem moldura nem arco (pedido do Pedro, 14/11/2026): o logo solto sobre o azul */
+.hero-logo img{width:100%;max-width:400px;margin-inline:auto}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr}.hero-logo{order:-1;max-width:300px;width:78%;margin-inline:auto}.hero{background-size:auto 70%;background-position:right -160px bottom -40px}}
+
+.sobre .simbolo-fundo{position:absolute;right:-140px;top:50%;transform:translateY(-50%);width:620px;opacity:.07;z-index:1;pointer-events:none}
+.sobre .wrap{max-width:900px}
+.sobre p:not(.ey){font-size:var(--s1);line-height:1.55;color:var(--sulco);margin:24px 0 0;max-width:46ch}
+.sobre p b{color:var(--azul);font-weight:500}
+.assina{margin-top:34px;display:flex;align-items:center;gap:16px;font-size:.85rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sulco)}
+.assina img{width:54px}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:44px}
+.card{background:#fff;border:1px solid var(--nevoa);border-radius:22px;padding:28px 26px;position:relative;overflow:hidden}
+.card::after{content:"";position:absolute;right:-40px;bottom:-40px;width:150px;height:140px;background:url(simbolo-azul.svg) center/contain no-repeat;opacity:.06}
+.card .ic{width:40px;margin-bottom:18px}
+.card p{color:var(--sulco);margin:10px 0 0;font-size:.98rem}
+
+.etapas{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin-top:44px;counter-reset:e}
+.etapas div{border:1px solid rgba(214,222,232,.22);border-radius:20px;padding:24px;background:rgba(20,43,73,.6)}
+.etapas div::before{counter-increment:e;content:"0" counter(e);font-family:var(--display);font-weight:600;font-size:2.8rem;color:var(--laranja);display:block;line-height:1;margin-bottom:12px;font-variant-numeric:lining-nums}
+.etapas b{font-family:var(--display);font-size:1.45rem;font-weight:600;color:var(--esmalte)}
+.etapas p{margin:6px 0 0;color:rgba(244,245,242,.75);font-size:.95rem}
+.barra{display:flex;gap:10px;margin-top:40px}.barra i{flex:1;height:6px;border-radius:3px;background:var(--laranja)}
+.etapas-fundo{position:absolute;left:-180px;bottom:-200px;width:560px;opacity:.06;z-index:1;pointer-events:none}
+
+.faixa{text-align:center;padding-block:clamp(64px,8vw,104px)}
+.faixa img{width:72px;margin:0 auto 22px;opacity:.9}
+.faixa h2 em{color:var(--laranja)}
+
+.faq{max-width:840px;margin-top:40px;border-top:1px solid var(--nevoa)}
+.faq details{border-bottom:1px solid var(--nevoa);padding-block:22px}
+.faq summary{cursor:pointer;list-style:none;font-family:var(--display);font-weight:600;font-size:var(--s1);display:flex;justify-content:space-between;gap:20px;font-variant-numeric:lining-nums}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--laranja);font-family:var(--body);font-weight:400;font-size:1.5em;line-height:1}
+.faq details[open] summary::after{content:"\2212"}
+.faq p{margin:12px 0 0;color:var(--sulco);max-width:68ch}
+
+.unidades{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px;margin-top:40px}
+.unidade{background:#fff;border:1px solid var(--nevoa);border-radius:26px;padding:30px;border-top:5px solid var(--azul)}
+.unidade .cid{font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;color:var(--sulco);margin:0 0 6px}
+.unidade address{font-style:normal;color:var(--sulco);margin:12px 0 6px;line-height:1.6}
+.horarios{list-style:none;padding:0;margin:14px 0 18px;border-top:1px solid var(--nevoa)}
+.horarios li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--nevoa);font-size:.98rem}
+.horarios li b{font-weight:500}
+.unidade .links{display:flex;flex-wrap:wrap;gap:10px 18px;margin:0 0 20px;font-size:.92rem;color:var(--sulco)}
+.google{margin-top:36px;display:flex;flex-wrap:wrap;gap:12px 28px;color:var(--sulco)}
+
+footer{background:var(--azul);color:var(--nevoa);padding-block:48px 40px}
+footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px}
+footer img{height:64px;width:auto}
+footer p{margin:0;font-size:.88rem;letter-spacing:.06em;line-height:1.8}
+.agendar-fixo{display:none}
+@media (max-width:760px){
+  .agendar-fixo{display:flex;position:fixed;left:16px;right:16px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:20;justify-content:center;padding:15px 20px;border-radius:999px;background:var(--laranja);color:var(--noite);font-weight:500;text-decoration:none;box-shadow:0 10px 30px rgba(11,26,46,.3);transition:opacity .25s}
+  .agendar-fixo.some{opacity:0;pointer-events:none} footer{padding-bottom:110px}
+}
+nav a.ativo{color:var(--azul);font-weight:500}
+.topo-casos{padding-block:clamp(64px,8vw,104px)}
+.topo-casos p.lede{color:rgba(244,245,242,.82);font-size:var(--s1);max-width:40ch;margin:22px 0 0;line-height:1.5}
+.aviso{margin-top:26px;font-size:.88rem;letter-spacing:.06em;color:var(--nevoa)}
+.caso{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,5vw,72px);align-items:start}
+.caso + .caso{margin-top:clamp(72px,10vw,120px);padding-top:clamp(72px,10vw,120px);border-top:1px solid var(--nevoa)}
+.caso .video{position:sticky;top:96px}
+.caso video{width:100%;max-width:400px;aspect-ratio:9/16;border-radius:24px;background:var(--noite);display:block;object-fit:cover;box-shadow:0 20px 50px rgba(11,26,46,.18)}
+.caso .legenda-video{font-size:.85rem;color:var(--sulco);margin:12px 0 0;max-width:400px}
+.caso .tags{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}
+.caso .tags span{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--nevoa);border-radius:999px;padding:6px 12px;color:var(--sulco);background:#fff}
+.caso .historia{color:var(--sulco);font-size:1.05rem;max-width:58ch}
+.caso .historia p{margin:18px 0 0}
+.caso .historia b{color:var(--azul);font-weight:500}
+.passos{list-style:none;padding:0;margin:36px 0 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.passos figure{margin:0;background:#fff;border:1px solid var(--nevoa);border-radius:20px;overflow:hidden;height:100%}
+.passos img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.passos figcaption{padding:14px 16px 16px;font-size:.92rem;color:var(--sulco);line-height:1.45}
+.passos figcaption b{display:block;font-family:var(--display);font-size:1.25rem;font-weight:600;color:var(--azul);margin-bottom:2px;font-variant-numeric:lining-nums}
+.passos figcaption b span{color:var(--laranja)}
+.licao{margin-top:36px;background:var(--azul);color:var(--esmalte);border-radius:24px;padding:28px 30px}
+.licao h3{color:var(--esmalte)} .licao h3 em{font-style:italic;font-weight:500}
+.licao p{margin:10px 0 18px;color:rgba(244,245,242,.82)}
+.nota{margin-top:18px;font-size:.82rem;color:var(--sulco)}
+.chamada-casos{margin-top:36px}
+@media (max-width:860px){.caso{grid-template-columns:1fr}.caso .video{position:static}.caso video{margin-inline:auto}.caso .legenda-video{margin-inline:auto;text-align:center}}
+@media (max-width:480px){.passos{gap:10px}.passos figcaption{padding:10px 12px 12px;font-size:.82rem}.passos figcaption b{font-size:1.05rem}.licao{padding:24px 20px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="marca" href="index.html" aria-label="Dr. Pedro Zucoloto, início"><img src="logo-horizontal-azul.svg" alt="Dr. Pedro Zucoloto, cirurgião-dentista, CRO-ES 12314"></a>
+  <nav><a href="index.html#sobre">Sobre</a><a href="index.html#tratamentos">Tratamentos</a><a class="ativo" href="casos-clinicos.html" aria-current="page">Casos clínicos</a><a href="index.html#duvidas">Dúvidas</a><a class="cta" href="index.html#agendar">Agendar</a></nav>
+</div></header>
+
+<main>
+  <section class="escuro topo-casos"><div class="wrap">
+    <p class="ey">Casos clínicos</p>
+    <h1>Do primeiro olhar <em>ao resultado.</em></h1>
+    <p class="lede">Casos reais, contados etapa por etapa, do jeito que eu mostro para cada paciente depois do tratamento.</p>
+    <p class="aviso">Contém imagens de procedimento odontológico. Imagens publicadas com autorização dos pacientes.</p>
+  </div></section>
+
+  <section><div class="wrap">
+
+    <article class="caso" id="premolar-extracao">
+      <div class="video">
+        <video src="casos/premolar-extracao/video.mp4" poster="casos/premolar-extracao/poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Vídeo do caso: fotos do pré-molar do antes ao resultado"></video>
+        <p class="legenda-video">O caso em 20 segundos.</p>
+      </div>
+      <div>
+        <p class="ey">Caso 01 · Novembro de 2026</p>
+        <h2>O que essa linha <em>escondia?</em></h2>
+        <div class="tags"><span>Pré-molar superior</span><span>Segunda avaliação</span><span>Canal e resina</span></div>
+        <div class="historia">
+          <p>A restauração antiga <b>não encostava no dente vizinho</b> (sem ponto de contato) e tinha a borda mal adaptada. Por essa fresta, a cárie entrou por baixo, sem aparecer.</p>
+          <p>Quando chegou, a cárie já estava muito profunda, na altura do osso, e o dente tinha <b>indicação de extração</b>. Ao abrir, a exposição do nervo foi grande e o sangramento não foi controlado: o caminho foi o <b>tratamento de canal</b>. A entrada do canal foi selada com Cotosol, um selador, e a restauração em resina foi feita por cima, devolvendo o contato com o vizinho.</p>
+        </div>
+        <ol class="passos">
+          <li><figure><img src="casos/premolar-extracao/f2.jpg" alt="Pré-molar superior com uma linha escura e um ponto escuro no meio da restauração antiga" loading="lazy"><figcaption><b><span>01</span> A linha</b>O primeiro sinal, na restauração antiga.</figcaption></figure></li>
+          <li><figure><img src="casos/premolar-extracao/f1.jpg" alt="Vista dos dentes superiores com a restauração antiga sem contato com o dente vizinho" loading="lazy"><figcaption><b><span>02</span> Sem contato</b>A borda mal adaptada deixou a cárie entrar por baixo.</figcaption></figure></li>
+          <li><figure><img src="casos/premolar-extracao/f3.jpg" alt="Dente isolado com lençol de borracha azul e grampo; cavidade profunda com o nervo exposto" loading="lazy"><figcaption><b><span>03</span> Isolamento absoluto</b>Lençol de borracha antes de abrir. A cárie chegou ao nervo.</figcaption></figure></li>
+          <li><figure><img src="casos/premolar-extracao/f4.jpg" alt="Vista pelo espelho da cavidade após o tratamento de canal" loading="lazy"><figcaption><b><span>04</span> Canal</b>Para manter o dente na boca.</figcaption></figure></li>
+          <li><figure><img src="casos/premolar-extracao/f5.jpg" alt="Selador branco na entrada do canal, matriz metálica e anéis roxos em volta do dente" loading="lazy"><figcaption><b><span>05</span> Selar e refazer a parede</b>Cotosol, matriz e anel interproximal.</figcaption></figure></li>
+          <li><figure><img src="casos/premolar-extracao/f6.jpg" alt="Pré-molar restaurado em resina com ponto de contato, visto pelo espelho" loading="lazy"><figcaption><b><span>06</span> Resultado</b>Ponto de contato de volta. O dente continua na boca.</figcaption></figure></li>
+        </ol>
+        <div class="licao">
+          <h3>Antes de extrair, <em>vale uma segunda opinião.</em></h3>
+          <p>Cada caso é avaliado de forma individual, e nem todo dente com indicação de extração tem esse caminho. Só a avaliação mostra o que é possível no seu caso.</p>
+          <a class="btn cheio" href="index.html#agendar">Agendar avaliação</a>
+        </div>
+        <p class="nota">Dr. Pedro Zucoloto · CRO-ES 12314 · Imagens publicadas com autorização do paciente.</p>
+      </div>
+    </article>
+
+  </div></section>
+</main>
+
+<footer><div class="wrap">
+  <img src="logo-horizontal-branca.svg" alt="Dr. Pedro Zucoloto, cirurgião-dentista, CRO-ES 12314">
+  <p>Vitória: terça-feira, 9h às 18h<br>Vila Velha: quinta-feira, 8h30 às 18h · sexta-feira, 8h30 às 17h</p>
+</div></footer>
+<a class="agendar-fixo" href="index.html#agendar">Agendar avaliação</a>
+</body>
+</html>
