@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- Site do Dr. Pedro Zucoloto (Sistema IB, v2 de 14/11/2026: identidade do kit de marca). Sem fotos por enquanto:
-     quando chegarem, a foto entra no lugar do logo vertical do topo (.hero-logo) e na seção Sobre. -->
+     fotos do Pedro na capa (.hero-foto) e na seção Sobre desde 16/11/2026. -->
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
@@ -75,12 +75,17 @@ nav a.cta{color:var(--azul);font-weight:500;border-bottom:2px solid var(--laranj
 .hero .btn:not(.cheio){color:var(--esmalte)}
 .creds{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:32px;font-size:.88rem;letter-spacing:.08em;text-transform:uppercase;color:var(--nevoa)}
 .creds b{color:var(--esmalte);font-weight:500}
-.hero-logo{padding:clamp(8px,2vw,24px) 0} /* sem moldura nem arco (pedido do Pedro, 14/11/2026): o logo solto sobre o azul */
-.hero-logo img{width:100%;max-width:400px;margin-inline:auto}
-@media (max-width:860px){.hero .wrap{grid-template-columns:1fr}.hero-logo{order:-1;max-width:300px;width:78%;margin-inline:auto}.hero{background-size:auto 70%;background-position:right -160px bottom -40px}}
+.hero-foto{position:relative;border-radius:22px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 30px 60px -30px rgba(0,0,0,.6);border:1px solid rgba(214,222,232,.25)} /* foto do Pedro, sem arco (pedido de 14/11/2026) */
+.hero-foto img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.hero-foto .selo-logo{position:absolute;right:18px;bottom:18px;width:64px;height:auto;opacity:.95}
+
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr}.hero-foto{order:-1;max-width:340px;width:86%;margin-inline:auto}.hero{background-size:auto 70%;background-position:right -160px bottom -40px}}
 
 .sobre .simbolo-fundo{position:absolute;right:-140px;top:50%;transform:translateY(-50%);width:620px;opacity:.07;z-index:1;pointer-events:none}
-.sobre .wrap{max-width:900px}
+.sobre .wrap{max-width:1080px;display:grid;grid-template-columns:.75fr 1.25fr;gap:clamp(32px,6vw,80px);align-items:center}
+.sobre .retrato{border-radius:22px;overflow:hidden;aspect-ratio:1/1;border:1px solid var(--nevoa)}
+.sobre .retrato img{width:100%;height:100%;object-fit:cover}
+@media (max-width:860px){.sobre .wrap{grid-template-columns:1fr}.sobre .retrato{max-width:320px}}
 .sobre p:not(.ey){font-size:var(--s1);line-height:1.55;color:var(--sulco);margin:24px 0 0;max-width:46ch}
 .sobre p b{color:var(--azul);font-weight:500}
 .assina{margin-top:34px;display:flex;align-items:center;gap:16px;font-size:.85rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sulco)}
@@ -148,17 +153,20 @@ footer p{margin:0;font-size:.88rem;letter-spacing:.06em;line-height:1.8}
       <div class="ctas"><a class="btn cheio" href="#agendar">Agendar avaliação</a><a class="btn" href="#tratamentos">Tratamentos</a></div>
       <div class="creds"><span><b>CRO-ES 12314</b></span><span>Dentística restauradora</span><span>Isolamento absoluto</span></div>
     </div>
-    <div class="hero-logo"><img src="logo-vertical-branca.svg" alt="Logo Dr. Pedro Zucoloto, cirurgião-dentista"></div>
+    <div class="hero-foto"><img src="pedro-capa.jpg" alt="Dr. Pedro Zucoloto sorrindo, de camisa azul" width="900" height="1125" fetchpriority="high"><img class="selo-logo" src="simbolo-reforcado-branco.svg" alt=""></div>
   </div></section>
 
   <section class="sobre" id="sobre">
     <img class="simbolo-fundo" src="simbolo-azul.svg" alt="">
     <div class="wrap">
+      <div class="retrato"><img src="pedro-retrato.jpg" alt="Retrato do Dr. Pedro Zucoloto" width="800" height="800" loading="lazy"></div>
+      <div>
       <p class="ey">Sobre</p>
       <h2>Você vai saber o que foi feito <em>na sua boca.</em></h2>
       <p>Sou o <b>Dr. Pedro Zucoloto</b>, cirurgião-dentista, e o meu foco é a dentística restauradora. Em toda restauração eu uso o <b>isolamento absoluto</b>: um lençol de borracha em volta do dente, que mantém a saliva longe e deixa a sua boca livre de algodão e sugador.</p>
       <p>Depois do tratamento, eu sento com você e mostro fotos e vídeos do antes, do durante e do depois. Sem pressa e sem termo difícil.</p>
       <div class="assina"><img src="simbolo-reforcado-azul.svg" alt="">Dr. Pedro Zucoloto · CRO-ES 12314</div>
+      </div>
     </div>
   </section>
 
