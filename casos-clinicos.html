@@ -10,7 +10,7 @@
 <meta name="description" content="Casos clínicos do Dr. Pedro Zucoloto: restaurações em resina com isolamento absoluto e dentes mantidos depois de uma segunda avaliação. CRO-ES 12314.">
 <meta property="og:title" content="Casos clínicos · Dr. Pedro Zucoloto">
 <meta property="og:description" content="Do primeiro olhar ao resultado, etapa por etapa.">
-<meta property="og:image" content="https://drpedrozucoloto.github.io/casos/premolar-extracao/poster.jpg">
+<meta property="og:image" content="https://drpedrozucoloto.github.io/casos/premolar-extracao/f6.jpg">
 <link rel="icon" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
@@ -116,17 +116,14 @@ nav a.ativo{color:var(--azul);font-weight:500}
 .topo-casos{padding-block:clamp(64px,8vw,104px)}
 .topo-casos p.lede{color:rgba(244,245,242,.82);font-size:var(--s1);max-width:40ch;margin:22px 0 0;line-height:1.5}
 .aviso{margin-top:26px;font-size:.88rem;letter-spacing:.06em;color:var(--nevoa)}
-.caso{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,5vw,72px);align-items:start}
+.caso{max-width:980px}
 .caso + .caso{margin-top:clamp(72px,10vw,120px);padding-top:clamp(72px,10vw,120px);border-top:1px solid var(--nevoa)}
-.caso .video{position:sticky;top:96px}
-.caso video{width:100%;max-width:400px;aspect-ratio:9/16;border-radius:24px;background:var(--noite);display:block;object-fit:cover;box-shadow:0 20px 50px rgba(11,26,46,.18)}
-.caso .legenda-video{font-size:.85rem;color:var(--sulco);margin:12px 0 0;max-width:400px}
 .caso .tags{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}
 .caso .tags span{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--nevoa);border-radius:999px;padding:6px 12px;color:var(--sulco);background:#fff}
 .caso .historia{color:var(--sulco);font-size:1.05rem;max-width:58ch}
 .caso .historia p{margin:18px 0 0}
 .caso .historia b{color:var(--azul);font-weight:500}
-.passos{list-style:none;padding:0;margin:36px 0 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.passos{list-style:none;padding:0;margin:36px 0 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
 .passos figure{margin:0;background:#fff;border:1px solid var(--nevoa);border-radius:20px;overflow:hidden;height:100%}
 .passos img{width:100%;aspect-ratio:4/5;object-fit:cover}
 .passos figcaption{padding:14px 16px 16px;font-size:.92rem;color:var(--sulco);line-height:1.45}
@@ -137,7 +134,7 @@ nav a.ativo{color:var(--azul);font-weight:500}
 .licao p{margin:10px 0 18px;color:rgba(244,245,242,.82)}
 .nota{margin-top:18px;font-size:.82rem;color:var(--sulco)}
 .chamada-casos{margin-top:36px}
-@media (max-width:860px){.caso{grid-template-columns:1fr}.caso .video{position:static}.caso video{margin-inline:auto}.caso .legenda-video{margin-inline:auto;text-align:center}}
+@media (max-width:760px){.passos{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:480px){.passos{gap:10px}.passos figcaption{padding:10px 12px 12px;font-size:.82rem}.passos figcaption b{font-size:1.05rem}.licao{padding:24px 20px}}
 </style>
 </head>
@@ -158,10 +155,6 @@ nav a.ativo{color:var(--azul);font-weight:500}
   <section><div class="wrap">
 
     <article class="caso" id="premolar-extracao">
-      <div class="video">
-        <video src="casos/premolar-extracao/video.mp4" poster="casos/premolar-extracao/poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Vídeo do caso: fotos do pré-molar do antes ao resultado"></video>
-        <p class="legenda-video">O caso em 13 segundos.</p>
-      </div>
       <div>
         <p class="ey">Caso 01 · Novembro de 2026</p>
         <h2>O que essa linha <em>escondia?</em></h2>
@@ -171,8 +164,8 @@ nav a.ativo{color:var(--azul);font-weight:500}
           <p>Quando chegou, a cárie já estava muito profunda, na altura do osso, e o dente tinha <b>indicação de extração</b>. Ao abrir, a exposição do nervo foi grande e o sangramento não foi controlado: o caminho foi o <b>tratamento de canal</b>. A entrada do canal foi selada com Cotosol, um selador, e a restauração em resina foi feita por cima, devolvendo o contato com o vizinho.</p>
         </div>
         <ol class="passos">
-          <li><figure><img src="casos/premolar-extracao/f2.jpg" alt="Pré-molar superior com uma linha escura e um ponto escuro no meio da restauração antiga" loading="lazy"><figcaption><b><span>01</span> A linha</b>O primeiro sinal, na restauração antiga.</figcaption></figure></li>
-          <li><figure><img src="casos/premolar-extracao/f1.jpg" alt="Vista dos dentes superiores com a restauração antiga sem contato com o dente vizinho" loading="lazy"><figcaption><b><span>02</span> Sem contato</b>A borda mal adaptada deixou a cárie entrar por baixo.</figcaption></figure></li>
+          <li><figure><img src="casos/premolar-extracao/f1.jpg" alt="Vista dos dentes superiores com a restauração antiga sem contato com o dente vizinho" loading="lazy"><figcaption><b><span>01</span> Sem contato</b>A borda mal adaptada deixou a cárie entrar por baixo.</figcaption></figure></li>
+          <li><figure><img src="casos/premolar-extracao/f2.jpg" alt="Pré-molar superior com uma linha escura e um ponto escuro no meio da restauração antiga" loading="lazy"><figcaption><b><span>02</span> De perto</b>A linha escura na restauração antiga.</figcaption></figure></li>
           <li><figure><img src="casos/premolar-extracao/f3.jpg" alt="Dente isolado com lençol de borracha azul e grampo; cavidade profunda com o nervo exposto" loading="lazy"><figcaption><b><span>03</span> Isolamento absoluto</b>Lençol de borracha antes de abrir. A cárie chegou ao nervo.</figcaption></figure></li>
           <li><figure><img src="casos/premolar-extracao/f4.jpg" alt="Vista pelo espelho da cavidade após o tratamento de canal" loading="lazy"><figcaption><b><span>04</span> Canal</b>Para manter o dente na boca.</figcaption></figure></li>
           <li><figure><img src="casos/premolar-extracao/f5.jpg" alt="Selador branco na entrada do canal, matriz metálica e anéis roxos em volta do dente" loading="lazy"><figcaption><b><span>05</span> Selar e refazer a parede</b>Cotosol, matriz e anel interproximal.</figcaption></figure></li>
